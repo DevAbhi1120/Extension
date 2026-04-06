@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --surface: 255 255 255;
+  --accent: 89 112 255;
+}
+
+[data-theme='dark'] {
+  --surface: 18 21 32;
+  --accent: 113 140 255;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  @apply m-0 font-sans text-white antialiased;
+}
+
+.glass-card {
+  @apply rounded-3xl border border-white/20 bg-white/15 shadow-glass backdrop-blur-xl;
+}

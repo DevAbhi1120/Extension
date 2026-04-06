@@ -13,8 +13,8 @@ const copy = (from, to) => copyFileSync(resolve(root, from), resolve(dist, to));
 copy('manifest.json', 'manifest.json');
 copy('background.js', 'background.js');
 
-if (!existsSync(resolve(dist, 'newtab.html')) && existsSync(resolve(dist, 'index.html'))) {
-  copyFileSync(resolve(dist, 'index.html'), resolve(dist, 'newtab.html'));
+if (!existsSync(resolve(dist, 'index.html')) && existsSync(resolve(dist, 'index.html'))) {
+  copyFileSync(resolve(dist, 'index.html'), resolve(dist, 'index.html'));
 }
 
 if (existsSync(resolve(dist, 'public'))) {

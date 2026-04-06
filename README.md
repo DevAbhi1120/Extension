@@ -41,7 +41,7 @@ A production-ready foundation for a **modern, highly customizable, lightweight C
 │       └── theme.ts
 ├── background.js
 ├── manifest.json
-├── newtab.html
+├── index.html
 ├── package.json
 ├── tailwind.config.js
 └── vite.config.ts

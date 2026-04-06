@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "AuraTab - Smart Material New Tab",
+  "description": "A modern, lightweight, customizable new tab dashboard with multitasking, widgets and premium unlock.",
+  "version": "1.0.0",
+  "minimum_chrome_version": "121",
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "permissions": ["storage", "geolocation", "alarms", "idle", "activeTab"],
+  "host_permissions": [
+    "https://api.open-meteo.com/*",
+    "https://*.razorpay.com/*",
+    "https://your-backend.example.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "icons": {
+    "16": "public/icons/icon-16.png",
+    "48": "public/icons/icon-48.png",
+    "128": "public/icons/icon-128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["assets/*", "fonts/*"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; frame-src https://*.wikipedia.org https://*.github.com https://*.stackoverflow.com;"
+  }
+}

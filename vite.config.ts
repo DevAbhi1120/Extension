@@ -7,7 +7,7 @@ export default defineConfig({
     outDir: 'dist',
     rollupOptions: {
       input: {
-        newtab: 'newtab.html'
+        newtab: 'index.html'
       },
       output: {
         manualChunks: {

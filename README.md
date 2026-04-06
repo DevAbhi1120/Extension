@@ -11,7 +11,7 @@ This project now fixes that automatically by copying extension runtime files int
 
 - `manifest.json`
 - `background.js`
-- `newtab.html` (fallback from `index.html` if needed)
+- `index.html` (fallback from `index.html` if needed)
 - `icons/*`
 
 ## Build (fixed)
@@ -35,7 +35,7 @@ After build, **load `dist/` directly** in `chrome://extensions`.
 dist/
 ├── manifest.json
 ├── background.js
-├── newtab.html
+├── index.html
 ├── assets/
 └── icons/
 ```
@@ -60,7 +60,7 @@ dist/
 │   └── utils/
 ├── background.js
 ├── manifest.json
-├── newtab.html
+├── index.html
 ├── package.json
 ├── tailwind.config.js
 └── vite.config.ts
